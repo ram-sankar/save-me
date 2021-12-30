@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Home</title>  
+      
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+      body {
+        padding:30px;
+      }
+
+  </style>  
+</head>
+    
+<body background="images/bg.jpg">  
+  <div class="inner-container">    
+    <div class="box">
+      <h1>Add Content</h1>
+        
+      <form action='/<%= req.params.path %>' method="post">
+          <input type="text" placeholder="Content" name="content" value="<%= content %>"/>
+          <button type="submit">Update</button>
+      </form>
+        
+    </div>
+  </div>
+ 
+</body>
